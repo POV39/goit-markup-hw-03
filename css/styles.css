@@ -198,12 +198,10 @@ img {
 /* --------BENEFITS--SECTION 2------ */
 
 .benefits {
-    padding-top: 120px;
-    padding-bottom: 120px
+    padding: 120px 0;
 }
 
 .benefits-container {
-    margin: 120 px auto;
 }
 
 .visually-hidden {
@@ -221,7 +219,6 @@ img {
 
 .list-benefits {
     display: flex;
-    margin: 0 auto;
     gap: 24px;
 }
 
