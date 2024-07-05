@@ -1,24 +1,43 @@
-
 body {
-font-family: "Roboto", sans-serif;
-color: #434455;
-background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 /* -------RESET------- */
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /* --------common------- */
@@ -35,9 +54,9 @@ a {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.heder-container{
-display: flex;
-align-items: center;
+.heder-container {
+    display: flex;
+    align-items: center;
 }
 
 .header-nav {
@@ -52,7 +71,7 @@ align-items: center;
 }
 
 .contacts-list {
-display: flex;
+    display: flex;
     align-items: center;
     gap: 40px;
 }
@@ -90,7 +109,6 @@ display: flex;
     color: #2e2f42;
 }
 
-
 .nav-link {
     display: block;
     padding: 24px 0;
@@ -105,54 +123,68 @@ display: flex;
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-color: #404bbf
+    color: #404bbf
 }
 
-/* ----------HERO---------- */
-.page-main {
+/* ----------HERO--SECTION 1-------- */
+
+.hero-section {
+    padding: 188px 0;
+    background: #2e2f42;
+
+    max-height: 600px;
 }
 
-.page-main-business {
-    background-color: #2e2f42;
+.hero-container {
+    margin: 0 auto;
 }
 
-.page-main-text {
-    padding-top: 188px;
-    margin: 188px auto;
-    display: flex;
+.hero-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 107%;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
-    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+    max-height: 120px;
+    align-items: center;
 }
 
-.page-main-button:hover,
-.page-main-button:focus
-{
-    background-color: #404BBF
-}
-
-.page-main-button {
-    margin: 48px auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    justify-content: flex-start;
-    flex-direction: row;
-    border-radius: 4px;
-    padding: 16px 32px;
+.hero-btn {
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    background-color: #4d5ae5;
-    cursor: pointer;
-    
+    background: #4d5ae5;
+
+    border-radius: 4px;
+    display: block;
+
+    margin: 0 auto;
+
+    text-align: center;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #404bbf;
+}
+
+
+
+/* --------BENEFITS--SECTION 2------ */
+
+.benefits-container {
+    margin: 120 px auto;
 }
 
 .visually-hidden {
@@ -168,16 +200,9 @@ color: #404bbf
     overflow: hidden;
 }
 
-
-/* --------BENEFITS-------- */
-
-.benefits-container {
-    margin: 120 px auto;
-}
-
 .list-benefits {
     display: flex;
-    align-items: center;
+    margin: 0 auto;
     gap: 24px;
 }
 
@@ -191,9 +216,12 @@ color: #404bbf
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .benefits-member-position {
+    text-align: left;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -201,40 +229,30 @@ color: #404bbf
     color: #434455;
 }
 
-/* ------- OUR TEAM -------- */
+/* ------- OUR TEAM--SECTION 3------ */
+
 .our-team {
-background-color: #f4f4fd;
-padding: 120px 0;
+    background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
-.list-team{
-display: flex;
-gap: 24px;
-max-width: calc((100% - 3*24px) / 4);
+.list-team {
+    display: flex;
+    gap: 24px;
+}
+
+
+.list-photo {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 0 0 4px 4px;
+    height: 380px;
+    max-width: calc((100% - 3*24px) / 4);
     align-items: center;
 }
 
-.team-tite {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
-        text-transform: capitalize;
-        margin-bottom: 72px;
-}
-
-.list-photo {
-background-color: #FFFFFF;
-margin: 0 auto;
-    border-radius: 0 0 4px 4px;
-    height: 380px;
-
-}
-
 .card-container {
-padding: 32px 0;
+    padding: 32px 0;
     margin: 0 auto;
     max-width: 232px;
     height: 56px;
@@ -242,14 +260,14 @@ padding: 32px 0;
 
 .team-member-name {
     margin: 0 auto;
-        margin-bottom: 8px;
-        text-align: center;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-member-position {
     margin: 0 auto;
-        padding-bottom: 32px;
-        text-align: center;
+    padding-bottom: 32px;
+    text-align: center;
 }
 
 .team-title,
@@ -261,7 +279,9 @@ padding: 32px 0;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
+
 
 .team-member-name,
 .portfolio-member-name {
@@ -283,31 +303,27 @@ padding: 32px 0;
     color: #434455;
 }
 
-.our-team {
-    background-color: #f4f4fd;
-}
 
 
-/* < !--Our Portfolio--> */
 
-.our-portfolio {
-    
-}
+/* -----OUR PORTFOLIO--SECTION 4---- */
+
+.our-portfolio {}
 
 .portfolio-container {
-padding: 120px 0 120px 0;
+    padding: 120px 0 120px 0;
 }
 
 .portfolio-title {
     font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        text-transform: capitalize;
-        color: #2e2f42;
-        margin-bottom: 72px;
-        padding-top: 120px;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    padding-top: 120px;
 }
 
 .list-portfolio {
@@ -323,7 +339,7 @@ padding: 120px 0 120px 0;
 }
 
 .portfolio-member-name {
-display: block;
+    display: block;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -334,12 +350,12 @@ display: block;
 
 .portfolio-member-position {
     display: block;
-        margin: 0;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 
@@ -351,7 +367,7 @@ display: block;
     margin: 0 auto;
 }
 
-.footer-container{
+.footer-container {
     flex-direction: column;
 }
 
@@ -360,8 +376,8 @@ display: block;
     margin-bottom: 16px;
 }
 
-.footer-logo{
-display: inline-block;
+.footer-logo {
+    display: inline-block;
 }
 
 .text-footer {
@@ -371,9 +387,6 @@ display: inline-block;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
-
-
