@@ -306,7 +306,10 @@ img {
 
 /* -----OUR PORTFOLIO--SECTION 4---- */
 
-.our-portfolio {}
+.our-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .container {}
 
@@ -328,6 +331,8 @@ img {
         display: flex;
             flex-wrap: wrap;
             row-gap: 48px;
+            column-gap: 24px;
+            padding-bottom: 120px;
 }
 
 .portfolio-images {
