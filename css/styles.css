@@ -277,6 +277,11 @@ img {
 
 .card-container {
     padding: 32px 0;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
 }
 
 .team-member-name {
@@ -330,9 +335,12 @@ img {
 }
 
 .portfolio-content {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-        border-bottom: 1px solid #e7e9fc;
-        border-top: none;
+    width: 360px;
+    height: 120px;
 }
 
 .portfolio-member-name {
