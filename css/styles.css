@@ -303,13 +303,14 @@ img {
 /* -----OUR PORTFOLIO--SECTION 4---- */
 
 .our-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
 
 .container {}
 
 .portfolio-container {
-    padding: 120px 0 120px 0;
 }
 
 .portfolio-title {
